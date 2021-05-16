@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def todolist(request):
-    return HttpResponse("hey this a django todolist website/app ")
+    return render(request, 'todolist.html', {})
