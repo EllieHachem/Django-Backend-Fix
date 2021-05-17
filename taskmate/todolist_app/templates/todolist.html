@@ -15,22 +15,20 @@
     </tbody>
     {% for obj in all_tasks %}
         {% if obj.done %}
-
            <tr  class = "table-success">
-             <td>{{obj.task}}</td>
-             <td>completed</td>
-             <td>Edit</td>
-             <td>Delete</td>
+              <td>{{obj.task}}</td>
+              <td>completed</td>
+              <td>Edit</td>
+              <td>Delete</td>
            </tr>
          {% else %}
             <tr>
-              <td>{{obj.task}}</td>
-              <td>not completed</td>
-              <td>Edit</td>
-              <td>Delete</td>
+                <td>{{obj.task}}</td>
+                <td>not completed</td>
+                <td>Edit</td>
+                <td>Delete</td>
             </tr>
           {% endif %}  
-
     {% endfor %}
     </tbody>
   </table>
